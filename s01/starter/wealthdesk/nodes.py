@@ -38,4 +38,19 @@ from .tools import llm
 
 def respond(state: WealthDeskState) -> dict:
     """Call the LLM and return the agent's reply."""
-    raise NotImplementedError("TODO 4: implement respond() in wealthdesk/nodes.py")
+    messages = [
+        SystemMessage(content=SYSTEM_PROMPT),
+        HumanMessage(content=state["customer_message"]),
+    ]
+
+    try:
+        result = llm.invoke(messages)
+        return {"response": result.content}
+    except Exception as exc:
+        print(f"[WealthDesk] Error: {exc}")
+        return {
+            "response": (
+                "Sorry, I’m having trouble responding right now. "
+                "Please try again in a moment. WealthDesk | Bharat National Bank"
+            )
+        }
