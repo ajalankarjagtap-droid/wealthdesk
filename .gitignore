@@ -7,6 +7,7 @@ resources/
 # Instructor-only files -- released before each session
 # To release a session: git rm -r --cached s0X/ && git add -f s0X/ && git commit
 s*/solution/
+s*/test_live.py
 s*/instructor_notes.md
 s*/instructor_notes_*.md
 s*/CLAUDE_CODE_PROMPTS.md
@@ -35,9 +36,11 @@ s03/solution/
 s03/tests/
 s04/solution/
 s04/tests/
-s05/
-s06/
-s07/
+s05/solution/
+s05/tests/
+s06/solution/
+s06/tests/
+s07/solution/
 s08/
 s09/
 s10/
@@ -56,6 +59,13 @@ data/checkpoints.db
 data/checkpoints.db-shm
 data/checkpoints.db-wal
 data/vectorstore/
+data/vectorstore_hybrid/
+
+# Staff-only documents -- not distributed to participants
+data/documents_staff/
+
+# Hybrid search extension -- instructor demo, not released to participants
+s04/solutionhybridsearch/
 
 # Python bytecode
 __pycache__/
@@ -74,7 +84,6 @@ htmlcov/
 .streamlit/
 
 # Editor
-.vscode/settings.json
 .idea/
 
 # OS
