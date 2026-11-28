@@ -95,4 +95,4 @@ EMBED_MODEL               = "all-MiniLM-L6-v2"
 RETRIEVAL_K               = 3
 RETRIEVAL_SCORE_THRESHOLD = 0.3
 
-MCP_SERVER_PATH = Path(__file__).resolve().parent.parent.parent.parent / "s07" / "solution" / "mcp_server.py"
+MCP_SERVER_PATH = Path(__file__).resolve().parent.parent.parent.parent / "s07" / "starter" / "mcp_server.py"

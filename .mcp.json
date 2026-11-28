@@ -1,0 +1,14 @@
+{
+	"mcpServers": {
+		"wealthdesk-tools": {
+			"type": "stdio",
+			"command": "C:\\Users\\alank\\source\\repos\\wealthdesk\\.venv\\Scripts\\python.exe",
+			"args": [
+				"C:\\Users\\alank\\source\\repos\\wealthdesk\\s07\\starter\\mcp_server.py"
+			],
+			"tools": [
+				"*"
+			]
+		}
+	}
+}
